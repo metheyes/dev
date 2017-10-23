@@ -1,5 +1,5 @@
 $.ajax({
-	method: "GET",
+	//method: "GET",
 	url: "/map/village.txt"
 }).done(function(data) {
 	console.log(data);
