@@ -10,5 +10,5 @@ $.get("/map/village.txt", function(data) {
 		}
 		console.log(lista);
 	});
-	$("table[class=content-border]").append("<table style=\"width:50%\"><tbody><tr><th style=\"width:33%\">Bynamn</th><th style=\"width:33%\">Poäng</th><th style=\"width:33%\">Kordinater</th></tr>" + lista + "</tbody></table>");
+	$("table[class=content-border]").after("<table style=\"width:50%\"><tbody><tr><th style=\"width:33%\">Bynamn</th><th style=\"width:33%\">Poäng</th><th style=\"width:33%\">Kordinater</th></tr>" + lista + "</tbody></table>");
 }, "text");
