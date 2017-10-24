@@ -1,5 +1,5 @@
 $.get("/map/village.txt", function(data) {
-	let points = prompt("Minimum poäng på barbarbyarna (standard: 1000)", "1000") || 1000;
+	let points = parseInt(prompt("Minimum poäng på barbarbyarna (standard: 1000)", "1000")) || 1000;
 	console.log(points);
 	let lista = [];
 	let b = data.split("\n");
