@@ -5,8 +5,7 @@ $.get("/map/village.txt", function(data) {
 	$.each(b, (i) => {
 		let inf = b[i].split(",");
 		if(inf[4] == 0 && inf[5] >= points) {
-			//console.log(inf);
-			let str = "<tr><td>" + inf[1] + "</td><td>" + inf[5] + "p</td><td><a href=\"/game.php?screen=info_village&id=" + inf[0] + "#" + inf[2] + ";" + inf[3] + "\">" + inf[2] + "|" + inf[3] + "</a></td></tr>").replace("," "");
+			let str = "<tr><td>" + inf[1] + "</td><td>" + inf[5] + "p</td><td><a href=\"/game.php?screen=info_village&id=" + inf[0] + "#" + inf[2] + ";" + inf[3] + "\">" + inf[2] + "|" + inf[3] + "</a></td></tr>".replace("," "");
 			lista.push(str);
 		}
 	});
