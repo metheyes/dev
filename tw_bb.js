@@ -9,5 +9,5 @@ $.get("/map/village.txt", function(data) {
 			lista.push("<tr><td>" + inf[1] + "</td><td>" + inf[5] + "p</td><td><a href=\"/game.php?screen=info_village&id=" + inf[0] + "#" + inf[2] + ";" + inf[3] + "\">" + inf[2] + "|" + inf[3] + "</a></td></tr>");
 		}
 	});
-	$("table[class=content-border]").before("<table style=\"width:100%\"><tbody><tr><th>Bynamn</th><th>Poäng</th><th>Kordinater</th></tr>" + lista + "</tbody></table>");
+	$("table[class=content-border]").before("<table class=\"vis\" style=\"width:50%\"><tbody><tr><th>Bynamn</th><th>Poäng</th><th>Kordinater</th></tr>" + lista + "</tbody></table>");
 }, "text");
